@@ -1,0 +1,8 @@
+apiVersion: security.basiccontroller.com/v1alpha1
+kind: ClusterScan
+metadata:
+  name: kube-hunter-cron-scan
+spec:
+  tool: kube-hunter
+  jobType: CronJob
+  schedule: "*/1 * * * *"  

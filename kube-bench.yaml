@@ -1,0 +1,7 @@
+apiVersion: security.basiccontroller.com/v1alpha1
+kind: ClusterScan
+metadata:
+  name: kube-bench-job-scan
+spec:
+  tool: kube-bench
+  jobType: Job
